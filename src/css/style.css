@@ -96,3 +96,16 @@ body {
   opacity: 0.5;
 }
 
+.valid {
+  outline-width: 5px;
+  outline-style: auto;
+  outline-color: #5cb85c;
+  outline-offset: 2px;
+}
+
+.invalid {
+  outline-width: 5px;
+  outline-style: auto;
+  outline-color: #ff0000;
+  outline-offset: 2px;
+}
