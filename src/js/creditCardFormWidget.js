@@ -53,11 +53,14 @@ export default class CreditCardFormWidget {
     const cards = this.parentEl.querySelectorAll('.card');
     
     if (getPaymentSystem(value)) {
+      console.log(getPaymentSystem(value));
       for (let card of cards) {
         if (card.id !== getPaymentSystem(value)) {
+          card.classList.remove('active');
           card.classList.add('disabled');
         } else {
           card.classList.add('active');
+          card.classList.remove('disabled');
         }
       }      
     } else {
